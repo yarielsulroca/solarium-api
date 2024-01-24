@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->string('descripcion');
-            $table->string('tutulo');
-            $table->string('imagen');
+            $table->string('descripcion')->nullable();
+            $table->string('titulo')->nullable();
+            $table->string('imagen')->nullable();
             $table->boolean('status');
 
             $table->unsignedBigInteger('negocio_id');
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('promocions');
+        Schema::dropIfExists('promociones');
     }
 };

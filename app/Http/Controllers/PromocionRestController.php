@@ -13,14 +13,11 @@ class PromocionRestController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-    $promociones = Promocion::orderBy('created_at', 'desc')->get();
-        return response()->json([
-            'promociones' => $promociones,
-            'mensage' => "List of Promociones orderBy created"],
-            Response::HTTP_OK);
-    }
+ public function index()
+{
+    $promociones = Promocion::all();
+    return response()->json($promociones, Response::HTTP_OK);
+}
 
 
     /**
