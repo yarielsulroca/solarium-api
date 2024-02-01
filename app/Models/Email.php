@@ -8,11 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Email extends Model
 {
     use HasFactory;
-    protected $table = 'emails'; // Nombre de la tabla en la base de datos
 
-    protected $fillable = [
-        'subject',
-        'content'
-    ];
-
+    protected $table = 'emails';
+    protected $fillable = ['email', 'subject', 'message'];
 }

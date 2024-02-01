@@ -29,7 +29,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::resource('promociones', PromocionController::class);
+
 
 Route::get('/negocio',[NegocioController::class,'index'])->name('negocio-index');
 Route::post('/negocio',[NegocioController::class,'store'])->name('negocio-store');
@@ -37,6 +37,6 @@ Route::get('/negocio/{negocio}',[NegocioController::class,'show'])->name('negoci
 Route::put('/negocio/{service}',[NegocioController::class,'update'])->name('negocio-update');
 Route::delete('/negocio/{negocio}',[NegocioController::class,'destroy'])->name('negocio-destroy');
 
-
+Route::resource('promociones', PromocionController::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
