@@ -37,7 +37,9 @@ class MailRestController extends Controller
 
             Mail::to($request->input('email'))->send(new ContactFormEmail($request->input('subject'), $emailContent));
 
-            return response()->json(['message' => 'Email sent and saved successfully'],Response::HTTP_OK);
+            return response()->json([
+                'message' => 'Email sent and saved successfully'],
+                Response::HTTP_OK);
         }
 
     }

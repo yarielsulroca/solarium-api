@@ -101,9 +101,9 @@
 
                                 <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                                     <ul>
-                                        <li>Route::get('https://sulroca.getthost.com/api/negocio')</li>
-                                        <li>Route::get('https://sulroca.getthost.com/api/promocion')</li>
-                                        <li>Route::post('https://sulroca.getthost.com/api/contactenos')</li>
+                                        <li>Route::get('https://127.0.0.1/api-app/api/negocio')</li>
+                                        <li>Route::get('https://127.0.0.1/api-app/api/promocion')</li>
+                                        <li>Route::post('https://127.0.0.1/api-app/cd ..api/contactenos')</li>
                                     </ul>
                                 </p>
                             </div>
